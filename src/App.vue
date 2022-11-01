@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <strong><router-link to="/">Who I am?</router-link></strong> |
+      <strong><router-link to="/about">My Likes</router-link></strong>
     </nav>
     <router-view/>
   </div>
@@ -15,6 +15,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-image: linear-gradient(rgba(52, 237, 222, 0.55), rgba(9, 0, 236, 0.59))
 }
 
 nav {
@@ -25,7 +26,7 @@ nav {
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: rgba(9, 0, 236, 0.59);
     }
   }
 }
